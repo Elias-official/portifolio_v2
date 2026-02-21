@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+   <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Elias Teixeira</title>
+        <link rel="stylesheet" href="style.css">     
+    </head> 
+
+    <body>
+        <header class="site-header">
+            <div class="header-top">
+                <h1>Elias Teixeira</h1>
+                <button class="menu-toggle" aria-label="Menu">☰</button>
+                <nav class="nav-menu">
+                    <ul class="nav">
+                        <li><a href="#Inicio">Inicio</a></li>
+                        <li><a href="#Trajetoria">Trajetória</a></li>
+                        <li><a href="#Sobre">Projetos</a></li>
+                        <li><a href="#Contato">Contato</a></li>
+                    </ul>
+                </nav>
+                <button class="theme-toggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
+            </div>
+        </header>
+        <main>
+            <section id="Inicio">
+                <h1>Inicio</h1>
+                <div class="profile">
+                    <img src="imagens/perfil.jpeg" alt="Foto de Elias Teixeira" class="profile-photo">
+                    <div class="profile-info">
+                        <h3>Elias Teixeira</h3>
+                        <p class="role">Estudante de Análise e Desenvolvimento de Sistemas</p>
+                        <p class="bio">Olá — sou desenvolvedor fullstack em formação. Gosto de criar interfaces claras e aprender novas tecnologias.</p>
+                        <div class="socials">
+                            <a href="https://github.com/Elias-official" target="_blank">GitHub</a>
+                            <a href="https://www.linkedin.com/in/elias-junioroficial/" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                    <!-- isso tenho que mudar -->
+            </section>
+            <section id="Trajetoria"> 
+                    <h2>Trajétoria</h2>
+                    <div class="Inicio1">
+                       <div class="bloco-perfil"> 
+                        <p1>
+                            Minha trajetória na programação começou no início de 2025, quando iniciei meus estudos na CGD Cursos, com foco em lógica de programação, HTML e CSS. 
+                            Foi nesse período que desenvolvi minha base técnica e comecei a entender como estruturar sistemas e organizar código de forma funcional.
+                            Ainda em 2025, concluí a formação e desenvolvi meu primeiro projeto, o RADAR CULTURAL, uma aplicação voltada para organização e apresentação de informações, 
+                            onde pude aplicar conceitos de estruturação de páginas, estilização e lógica de funcionamento.
+                            Após essa fase inicial, ampliei meus estudos para JavaScript, aprofundando meus conhecimentos em interatividade e manipulação de DOM. Atualmente, 
+                            estou direcionando meu foco para o Back-end, estudando Java e MySQL, com o objetivo de compreender o desenvolvimento completo de aplicações, da interface à persistência de dados.
+                            Sigo evoluindo por meio de projetos práticos, disciplina e estudo constante, construindo uma base sólida para minha entrada definitiva no mercado de tecnologia.
+                        </p1> 
+                        <p2> 
+                            O RADAR CULTURAL foi meu primeiro projeto prático, desenvolvido inicialmente com foco em Front-end utilizando HTML5, CSS3 e JavaScript.
+                            A aplicação contava com sistema de login, cadastro e logout, simulando autenticação de usuários através de armazenamento local, permitindo aplicar conceitos de lógica de programação, manipulação de DOM e controle de estado da aplicação.
+                            Esse projeto marcou minha transição do aprendizado teórico para a construção de sistemas funcionais, despertando meu interesse pelo desenvolvimento Back-end e pela criação de aplicações mais completas.
+                        </p2>
+                          </div>
+    
+                    </div>    
+                     <!-- preciso colocar uma foto minha-->   
+            </section>
+
+            <section id="Sobre">
+                <h2>Projetos</h2>
+                <div class="github fade-in-scroll">
+                  <a href="https://github.com/Elias-official" target="_blank">GitHub</a>
+                    <p>
+                        No meu Github, você pode encontrar uma variedade de projetos que refletem minha paixão por tecnologia e desenvolvimento de software.
+                        Desde projetos de desenvolvimento web utilizando HTML, CSS e JavaScript, até aplicações mais complexas que envolvem Java e MySQL, cada repositório é uma demonstração do meu compromisso em aprender e crescer na área de tecnologia.
+                        Além disso, compartilho projetos relacionados a automóveis, onde aplico meus conhecimentos técnicos para criar soluções inovadoras e interessantes. Convido você a explorar meu GitHub para conhecer mais sobre meus projetos e contribuições na área de tecnologia.
+                    </p>
+                   </div>
+                   <div class="filter-buttons fade-in-scroll">
+                     <button class="filter-btn active" data-filter="all">Todos</button>
+                     <button class="filter-btn" data-filter="frontend">Frontend</button>
+                     <button class="filter-btn" data-filter="game">Games</button>
+                   </div> 
+                    <!-- ficará os links dos meus projetos-->
+                     <div class="bloco-1 projeto-card fade-in-scroll" data-category="frontend" data-project-id="radar">
+                     <a href="https://github.com/Elias-official/Radar-Cultural" target="_blank">Repositório do Radar Cultural</a>
+                     <a href="https://elias-official.github.io/Radar-Cultural/" target="_blank">Radar Cultural</a>
+                        <p1>A Radar Cultural foi um projeto desenvolvido em HTML, CSS e JavaScript, com base em Streamers por exemplo, Netflix e Prime Video, onde o usuário pode pesquisar por filmes e séries,
+                            tendo sistemas de até Login e Cadastro
+                        </p1>
+                        <button class="btn-saiba-mais" data-project="radar">Saiba mais</button>
+                    </div>      
+                     <div class="bloco-2 projeto-card fade-in-scroll" data-category="game" data-project-id="impar">   
+                     <a href="https://github.com/Elias-official/Projetos" target="_blank">Repositório do Impor e Par</a>
+                     <a href=" https://elias-official.github.io/Projetos/" target="_blank">Impor e Par</a>
+                     <p1>Inicialmente criado como um projeto experimental, desenvolvi um jogo web utilizando HTML, CSS e JavaScript, baseado na lógica de "Par ou Ímpar".
+                        O sistema conta com geração de número aleatório, controle de níveis, sistema de XP, progressão e armazenamento de dados no navegador, aplicando conceitos de lógica de programação, 
+                        manipulação de DOM e controle de estado da aplicação.
+                     </p1>
+                     <button class="btn-saiba-mais" data-project="impar">Saiba mais</button>
+                     </div>
+                     <h3>Futuramente colocarei projetos de Java e MySQL</h3>
+            </section>
+            <!--tbm n sei como vai ser uma pagina inteira.-->
+            <section id="Contato">
+                <div class="stats-container fade-in-scroll">
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-target="5">0</h3>
+                        <p>Meses de Estudos</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-target="2">0</h3>
+                        <p>Projetos Completos</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-target="3">0</h3>
+                        <p>Tecnologias</p>
+                    </div>
+                </div>
+                <footer class="site-footer fade-in-scroll">
+                <h3>Contato</h3>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Seu nome" required id="name">
+                    <input type="email" placeholder="Seu email" required id="email">
+                    <textarea placeholder="Sua mensagem" required id="message" rows="5"></textarea>
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </form>
+                <div class="contact-info">
+                    <p>Email: eliastsjunior@email.com</p>
+                    <p>Telefone: (11) 95455-4872</p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/elias-junioroficial/" target="_blank">Perfil no LinkedIn</a></p>
+                    <p>Instagram: <a href="https://www.instagram.com/_.eli.jr/" target="_blank">Perfil no Instagram</a></p>
+                </div>
+            </footer>
+            </section>
+        </main>
+
+        <!-- Modal dos Projetos -->
+        <div class="modal" id="projectModal">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2 id="modalTitle">Projeto</h2>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
