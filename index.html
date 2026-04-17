@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+   <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Elias Teixeira</title>
+        <link rel="stylesheet" href="style.css">     
+    </head> 
+
+    <body>
+        <header class="site-header">
+            <div class="header-top">
+                <h1>Elias Teixeira</h1>
+                <button class="menu-toggle" aria-label="Menu">☰</button>
+                <nav class="nav-menu">
+                    <ul class="nav">
+                        <li><a href="#Inicio">Inicio</a></li>
+                        <li><a href="#Trajetoria">Trajetória</a></li>
+                        <li><a href="#Sobre">Projetos</a></li>
+                        <li><a href="#Contato">Contato</a></li>
+                       <li><a class="download-link" href="download/Curriculo_Elias_Teixeira_v4.pdf.pdf" download>Currículo ⬇️</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id="Inicio" class="app-window">
+                <div class="window-bar">
+                    <span class="window-title">Inicio</span>
+                    <div class="window-controls">
+                        <span class="window-btn close"></span>
+                        <span class="window-btn minimize"></span>
+                        <span class="window-btn maximize"></span>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <div class="profile">
+                        <img src="imagens/perfil.jpeg" alt="Foto de Elias Teixeira" class="profile-photo">
+                        <div class="profile-info">
+                            <h3>Elias Teixeira</h3>
+                        <p class="role">Estudante de Análise e Desenvolvimento de Sistemas</p>
+                        <p class="bio">Olá, Desenvolvedor fullstack em formação, com experiência em Java e JavaScript. Desenvolvo interfaces claras e funcionais e tenho interesse em automação e sistemas, utilizando programação para criar soluções práticas e eficientes.</p>
+                        <div class="socials">
+                            <a href="https://github.com/Elias-official" target="_blank">GitHub</a>
+                            <a href="https://www.linkedin.com/in/elias-junioroficial/" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- isso tenho que mudar -->
+                </div>
+            </section>
+            <section id="Trajetoria" class="app-window"> 
+                <div class="window-bar">
+                    <span class="window-title">Trajetória</span>
+                    <div class="window-controls">
+                        <span class="window-btn close"></span>
+                        <span class="window-btn minimize"></span>
+                        <span class="window-btn maximize"></span>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <div class="Inicio1">
+                       <div class="bloco-perfil"> 
+                            <p>
+                                    Desenvolvedor fullstack em formação, com início 
+                                    na programação em 2025, construindo uma base sólida em lógica de programação, HTML, CSS e JavaScript.
+                                    Desenvolvi o projeto Radar Cultural, uma aplicação com sistema de login, cadastro e controle de sessão utilizando armazenamento local, onde apliquei conceitos de manipulação de DOM, organização de código e estruturação de interfaces.
+                            </p>
+                            <p>
+                                    Atualmente, estou focado no desenvolvimento back-end 
+                                    com Java e MySQL, buscando evoluir na construção de aplicações completas, integrando front-end e back-end de forma funcional e escalável.
+                                    Tenho como foco o aprendizado contínuo por meio de projetos práticos, visando consolidar minha entrada no mercado de tecnologia.
+                            </p>
+                          </div>
+    
+                    </div>    
+                     <!-- preciso colocar uma foto minha-->   
+                </div>
+            </section>
+
+            <section id="Sobre" class="app-window">
+                <div class="window-bar">
+                    <span class="window-title">Projetos</span>
+                    <div class="window-controls">
+                        <span class="window-btn close"></span>
+                        <span class="window-btn minimize"></span>
+                        <span class="window-btn maximize"></span>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <div class="github fade-in-scroll">
+                      <a href="https://github.com/Elias-official" target="_blank">GitHub</a>
+                        <p>
+                            No meu Github, você pode encontrar uma variedade de projetos que refletem minha paixão por tecnologia e desenvolvimento de software.
+                        Desde projetos de desenvolvimento web utilizando HTML, CSS e JavaScript, até aplicações mais complexas que envolvem Java e MySQL, cada repositório é uma demonstração do meu compromisso em aprender e crescer na área de tecnologia.
+                        Além disso, compartilho projetos relacionados a automóveis, onde aplico meus conhecimentos técnicos para criar soluções inovadoras e interessantes. Convido você a explorar meu GitHub para conhecer mais sobre meus projetos e contribuições na área de tecnologia.
+                    </p>
+                   </div>
+                   <div class="filter-buttons fade-in-scroll">
+                     <button class="filter-btn active" data-filter="all">Todos</button>
+                     <button class="filter-btn" data-filter="frontend">Frontend</button>
+                     <button class="filter-btn" data-filter="game">Games</button>
+                   </div> 
+                    <!-- ficará os links dos meus projetos-->
+                     <div class="bloco-1 projeto-card fade-in-scroll" data-category="frontend" data-project-id="radar">
+                     <a href="https://github.com/Elias-official/Radar-Cultural" target="_blank">Repositório do Radar Cultural</a>
+                     <a href="https://elias-official.github.io/Radar-Cultural/" target="_blank">Radar Cultural</a>
+                        <p1>A Radar Cultural foi um projeto desenvolvido em HTML, CSS e JavaScript, com base em Streamers por exemplo, Netflix e Prime Video, onde o usuário pode pesquisar por filmes e séries,
+                            tendo sistemas de até Login e Cadastro
+                        </p1>
+                        <button class="btn-saiba-mais" data-project="radar">Saiba mais</button>
+                    </div>      
+                     <div class="bloco-2 projeto-card fade-in-scroll" data-category="game" data-project-id="impar">   
+                     <a href="https://github.com/Elias-official/Projetos" target="_blank">Repositório do Impor e Par</a>
+                     <a href=" https://elias-official.github.io/Projetos/" target="_blank">Impor e Par</a>
+                     <p1>Inicialmente criado como um projeto experimental, desenvolvi um jogo web utilizando HTML, CSS e JavaScript, baseado na lógica de "Par ou Ímpar".
+                        O sistema conta com geração de número aleatório, controle de níveis, sistema de XP, progressão e armazenamento de dados no navegador, aplicando conceitos de lógica de programação, 
+                        manipulação de DOM e controle de estado da aplicação.
+                     </p1>
+                     <button class="btn-saiba-mais" data-project="impar">Saiba mais</button>
+                     </div>
+                     <h3>Futuramente colocarei projetos de Java e MySQL</h3>
+                </div>
+            </section>
+            <!--tbm n sei como vai ser uma pagina inteira.-->
+            <section id="Contato" class="app-window">
+                <div class="window-bar">
+                    <span class="window-title">Contato</span>
+                    <div class="window-controls">
+                        <span class="window-btn close"></span>
+                        <span class="window-btn minimize"></span>
+                        <span class="window-btn maximize"></span>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <div class="stats-container fade-in-scroll">
+                        <div class="stat-card">
+                            <h3 class="stat-number" data-target="4">0</h3>
+                            <p>Meses de Estudos</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-number" data-target="3">0</h3>
+                            <p>Projetos Completos</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-number" data-target="3">0</h3>
+                            <p>Tecnologias</p>
+                        </div>
+                    </div>
+                    <footer class="site-footer fade-in-scroll">
+                    <h3>Contato</h3>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Seu nome" required id="name">
+                    <input type="email" placeholder="Seu email" required id="email">
+                    <textarea placeholder="Sua mensagem" required id="message" rows="5"></textarea>
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </form>
+                <div class="contact-info">
+                    <p>Email: eliastsjunior@email.com</p>
+                    <p>Telefone: (11) 95455-4872</p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/elias-junioroficial/" target="_blank">Perfil no LinkedIn</a></p>
+                    <p>Instagram: <a href="https://www.instagram.com/_.eli.jr/" target="_blank">Perfil no Instagram</a></p>
+                </div>
+            </footer>
+                </div>
+            </section>
+        </main>
+
+        <!-- Modal dos Projetos -->
+        <div class="modal" id="projectModal">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2 id="modalTitle">Projeto</h2>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+                
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script src="script.js"></script>
+    </body>
