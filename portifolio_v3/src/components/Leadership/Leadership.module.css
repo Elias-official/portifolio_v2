@@ -1,0 +1,129 @@
+.leadership {
+  padding: 80px 10%;
+}
+.leadership > span {
+  color: #3b82f6;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+}
+
+.leadership > h2 {
+  font-size: 3rem;
+
+  margin: 20px 0 50px;
+}
+.leadershipList {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 30px;
+}
+.card {
+  background: #111;
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.card:hover {
+  transform: translateY(-8px);
+
+  border-color: #3b82f6;
+
+  box-shadow:
+    0 0 15px rgba(59, 130, 246, 0.15);
+}
+.card h2 {
+  padding: 20px 20px 5px;
+
+  font-size: 1.5rem;
+}
+
+.card h3 {
+  padding: 0 20px;
+
+  color: #3b82f6;
+
+  font-size: 1rem;
+
+  font-weight: 500;
+}
+.card p {
+  padding: 15px 20px 0;
+  margin-bottom: 16px;
+
+  line-height: 1.7;
+
+  color: #bdbdbd;
+}
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 20px;
+  margin: 0 0 20px;
+}
+.skillsList span {
+  padding: 6px 10px;
+
+  border-radius: 999px;
+
+  background: rgba(59, 130, 246, 0.15);
+
+  border: 1px solid rgba(59, 130, 246, 0.3);
+
+  color: #60a5fa;
+
+  font-size: 0.85rem;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  overflow-wrap: anywhere;
+}
+.card a {
+  display: inline-block;
+
+  margin: auto 20px 24px;
+  padding-top: 2px;
+
+  text-decoration: none;
+
+  color: #3b82f6;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+.card a:hover {
+  opacity: 0.8;
+}
+.image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+
+@media (max-width: 800px) {
+  .leadershipList {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .leadership {
+    padding: 60px 5%;
+  }
+
+  .leadership > h2 {
+    font-size: 2.4rem;
+  }
+}

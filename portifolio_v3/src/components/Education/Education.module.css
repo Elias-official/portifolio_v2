@@ -1,0 +1,68 @@
+.education {
+  padding: 80px 10%;
+}
+
+.education > span {
+  color: #3b82f6;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.education > h2 {
+  margin: 20px 0 40px;
+  font-size: 3rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.educationList,
+.details {
+  display: grid;
+  align-content: start;
+  gap: 18px;
+}
+
+.card {
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background: #111;
+}
+
+.card > span {
+  color: #60a5fa;
+  font-size: 0.9rem;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.card p,
+.card li {
+  color: #bdbdbd;
+  line-height: 1.7;
+}
+
+.card ul {
+  margin: 8px 0 0 20px;
+}
+
+@media (max-width: 760px) {
+  .education {
+    padding: 60px 5%;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .education > h2 {
+    font-size: 2.4rem;
+  }
+}

@@ -1,0 +1,154 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 10%;
+
+  backdrop-filter: blur(10px);
+  background: rgba(10, 10, 10, 0.8);
+
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 5px;
+  padding: 0;
+}
+
+.line1, .line2, .line3 {
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.links ul {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links a {
+  color: #ccc;
+  text-decoration: none;
+  position: relative;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+  display: inline-block;
+}
+
+.links a.active {
+  color: #3b82f6;
+}
+
+.links a:hover {
+  opacity: 0.85;
+}
+
+.underline {
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  height: 2px;
+  background: #3b82f6;
+  border-radius: 1px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px 5%;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .links.open {
+    max-height: 400px;
+    padding: 20px 10%;
+  }
+
+  .links ul {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .links a {
+    font-size: 1rem;
+    padding: 8px 0;
+    display: block;
+  }
+
+  .underline {
+    display: none;
+  }
+
+  .links a.active {
+    border-left: 3px solid #3b82f6;
+    padding-left: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 12px 4%;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .links.open {
+    padding: 16px 5%;
+  }
+
+  .links a {
+    font-size: 0.9rem;
+  }
+}
+

@@ -1,0 +1,231 @@
+.projects {
+  min-height: 100vh;
+
+  padding: 80px 10%;
+}
+.projects > span {
+  color: #3b82f6;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+}
+
+.projects h2 {
+  font-size: 3rem;
+
+  margin: 20px 0 50px;
+}
+
+.languageOverview {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(240px, 0.7fr);
+  gap: 24px 40px;
+  margin: 0 0 48px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  background: linear-gradient(120deg, rgba(17, 17, 17, 0.98), rgba(15, 25, 42, 0.75));
+}
+
+.languageHeader {
+  grid-column: 1 / -1;
+}
+
+.eyebrow {
+  color: #60a5fa;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.languageHeader h3 {
+  margin-top: 8px;
+  font-size: 1.5rem;
+}
+
+.languageHeader p {
+  margin-top: 8px;
+  color: #bdbdbd;
+  line-height: 1.6;
+}
+
+.languageList {
+  display: grid;
+  gap: 16px;
+  align-content: center;
+}
+
+.languageLabel {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 7px;
+  font-size: 0.9rem;
+}
+
+.languageLabel > span:last-child {
+  color: #a3a3a3;
+  font-size: 0.8rem;
+}
+
+.javaLabel {
+  color: #93c5fd;
+  font-weight: 700;
+}
+
+.languageTrack {
+  height: 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.languageBar {
+  height: 100%;
+  border-radius: inherit;
+  background: #3b82f6;
+}
+
+.javaBar {
+  background: linear-gradient(90deg, #60a5fa, #bfdbfe);
+  box-shadow: 0 0 12px rgba(96, 165, 250, 0.45);
+}
+
+.javaFocus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  padding: 22px;
+  border: 1px solid rgba(96, 165, 250, 0.25);
+  border-radius: 16px;
+  background: rgba(59, 130, 246, 0.08);
+}
+
+.javaMark {
+  color: #93c5fd;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.javaFocus p {
+  color: #c4c4c4;
+  line-height: 1.7;
+}
+
+.projectGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(350px, 1fr));
+
+  gap: 30px;
+}
+
+.card {
+  background: #111;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255,255,255,.05);
+
+  transition: .3s;
+}
+.card:hover {
+  transform: translateY(-8px);
+
+  border-color: #3b82f6;
+}
+.image {
+  height: 220px;
+
+  background: #181818;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card h3 {
+  padding: 20px 20px 10px;
+
+  font-size: 1.4rem;
+}
+
+.card p {
+  padding: 0 20px;
+
+  color: #bdbdbd;
+
+  line-height: 1.7;
+}
+.card a {
+  display: inline-block;
+
+  margin: 20px;
+
+  color: #3b82f6;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
+.image {
+  width: 100%;
+  height: 220px;
+
+  object-fit: cover;
+
+  display: block;
+}
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin: 15px 0;
+}
+
+.technologies span {
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  background: rgba(59, 130, 246, 0.15);
+
+  border: 1px solid rgba(59, 130, 246, 0.3);
+
+  color: #60a5fa;
+
+  font-size: 0.85rem;
+
+  font-weight: 500;
+}
+
+@media (max-width: 760px) {
+  .languageOverview {
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+
+  .languageHeader {
+    grid-column: auto;
+  }
+
+  .projects h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    padding: 60px 5%;
+  }
+
+  .projectGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
