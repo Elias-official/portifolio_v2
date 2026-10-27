@@ -14,6 +14,7 @@ export const projects = [
       "https://github.com/Elias-official/Projeto-da-Faculdade",
     demo: "",
     image: dashboardImage,
+    languages: ["JavaScript", "Python"],
     technologies: ["React", "Flask", "APIs REST", "MySQL"],
   },
 
@@ -25,6 +26,7 @@ export const projects = [
       "https://github.com/Elias-official/password-security-flask",
     demo: "",
     image: passwordSecurityImage,
+    languages: ["Python"],
     technologies: ["Flask", "Python"],
   },
 
@@ -36,6 +38,7 @@ export const projects = [
       "https://github.com/Elias-official/Password-Security-Hash-Generator",
     demo: "",
     image: hashGeneratorImage,
+    languages: ["Python"],
     technologies: ["Python"],
   },
 
@@ -47,6 +50,7 @@ export const projects = [
       "https://github.com/Elias-official/Projeto-de-Impar-e-Par",
     demo: "https://elias-official.github.io/Projeto-de-Impar-e-Par/",
     image: imparOuParImage,
+    languages: ["JavaScript"],
     technologies: ["HTML", "CSS", "JavaScript"],
   },
 
@@ -58,6 +62,7 @@ export const projects = [
       "https://github.com/Elias-official/Radar-Cultural",
     demo: "https://elias-official.github.io/Radar-Cultural/",
     image: radarCulturalImage,
+    languages: ["JavaScript"],
     technologies: ["HTML", "CSS", "JavaScript"],
   },
 
@@ -67,6 +72,7 @@ export const projects = [
     "Projeto acadêmico desenvolvido em Java para praticar Programação Orientada a Objetos, utilizando herança, encapsulamento e polimorfismo. Permite cadastrar, listar e buscar alunos e professores.",
   github: "https://github.com/Elias-official/Sistema-de-Cadastro-de-Alunos-com-Heranca-e-Polimorfismo-Java",
   image: AlunoProjeto,
+  languages: ["Java"],
   technologies: [
     "Java",
     "POO",

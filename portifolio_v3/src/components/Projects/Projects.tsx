@@ -4,11 +4,15 @@ import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { motion } from 'framer-motion';
 
-const languages = ['Java', 'Python', 'JavaScript', 'HTML', 'CSS'];
-const languageUsage = languages.map((language) => ({
-  name: language,
-  count: projects.filter((project) => project.technologies.includes(language)).length,
-}));
+const languageCounts = projects.reduce<Record<string, number>>((counts, project) => {
+  project.languages.forEach((language) => {
+    counts[language] = (counts[language] ?? 0) + 1;
+  });
+  return counts;
+}, {});
+const languageUsage = Object.entries(languageCounts)
+  .map(([name, count]) => ({ name, count }))
+  .sort((first, second) => second.count - first.count || first.name.localeCompare(second.name));
 const maxLanguageUsage = Math.max(...languageUsage.map(({ count }) => count), 1);
 
 const containerVariants = {
@@ -57,10 +61,10 @@ export function Projects() {
       >
         <div className={styles.languageHeader}>
           <div>
-            <span className={styles.eyebrow}>TECNOLOGIAS NOS PROJETOS</span>
-            <h3>Linguagens que já usei</h3>
+            <span className={styles.eyebrow}>LINGUAGENS NOS PROJETOS</span>
+            <h3>Linguagens usadas</h3>
           </div>
-          <p>Contagem baseada nos projetos publicados neste portfólio.</p>
+          <p>O gráfico é atualizado com as linguagens cadastradas em cada projeto.</p>
         </div>
 
         <div className={styles.languageList}>
