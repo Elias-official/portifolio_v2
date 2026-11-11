@@ -4,6 +4,7 @@ import hashGeneratorImage from './assets/hash.png'
 import imparOuParImage from './assets/par.png'
 import radarCulturalImage from './assets/radar-cultural.png'
 import AlunoProjeto from './assets/AlunoProjeto.png'
+import Projeto2 from './assets/Projeto2.png'
 
 export const projects = [
   {
@@ -71,6 +72,7 @@ export const projects = [
   description:
     "Projeto acadêmico desenvolvido em Java para praticar Programação Orientada a Objetos, utilizando herança, encapsulamento e polimorfismo. Permite cadastrar, listar e buscar alunos e professores.",
   github: "https://github.com/Elias-official/Sistema-de-Cadastro-de-Alunos-com-Heranca-e-Polimorfismo-Java",
+  demo: "",
   image: AlunoProjeto,
   languages: ["Java"],
   technologies: [
@@ -81,4 +83,17 @@ export const projects = [
     "ArrayList"
   ],
   },
+  
+  {
+    title: "Sistema de Menu de cinema",
+    description:
+      "Este outro projeto acadêmico em Java permite o usuário visualizar os assentos disponíveis, fazer reservas e cancelar reservas existentes por meio de um menu interativo no terminal. Utilizando conceitos de POO, Matriz e Arraylist.",
+    github: "https://github.com/Elias-official/Sistema-de-Menu-de-Cinema-Matriz-Arraylist",
+    demo: "",
+    image: Projeto2,
+    languages: ["Java"],
+    technologies: ["Java", "POO", "Matriz", "ArrayList"]
+  }
+  
 ];
+
